@@ -15,7 +15,7 @@
      --git-path=namespaces,workloads \
      --namespace=flux | kubectl apply -f -
        
-       **Flux v1 is deprecated, please upgrade to v2 as soon as possible!**
+      **Flux v1 is deprecated, please upgrade to v2 as soon as possible!**
 
       New users of Flux can Get Started here:
       https://fluxcd.io/docs/get-started/
@@ -32,6 +32,7 @@
       deployment.apps/flux created
 
       Note: All above objects are created using https://github.com/usunnapu/content-gitops/blob/master/docs/Flux_Install_Yaml.md
+            to list the install YAML file through CLI, remove "kubectl apply -f" from the above command and it will dump the YAML file 
     
     - verify that all pods/resources under flux namespace are up/running
      kubectl get all -n flux
